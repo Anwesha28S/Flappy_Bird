@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: aquamarine;
+}
+#game{
+    height: 500px;
+    width:400px;
+    position:relative;
+    border: 1px solid black;
+    background: url(bg1.ong) ;
+    background-size: cover;
+    margin: 1rem auto;
+    overflow:hidden;
+}
+.pipe {
+  position: absolute;
+  left: 100%;
+  animation: movePipe 2s linear infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_pipe,
+.bottom_pipe {
+  width: 50px;
+  height: 175px;
+  background-color: darkgreen;
+}
+
+#hole {
+  height: 150px; 
+  width: 50px;
+}
+@keyframes movePipe {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -60px;
+  }
+}
+
+#bird{
+    position:absolute;
+    top: 100px;
+    height: 50px;
+    width: 50px;
+}
+#bird img{
+    height: 50px;
+    width: 50px;
+}
+#result{
+  height:200px;
+  width:500px;
+  background-color: beige;
+  margin: 5rem auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  display:none;
+  text-align: center;
+}
+#btn{
+  padding:0.5rem 1rem;
+  border:none;
+  border-radius: 12px;
+  background-color: yellowgreen;
+  color:black;
+  border: 2px solid green;
+  font-size:1.5rem;
+  text-transform: uppercase;
+  margin-top:1rem;
+  cursor:pointer;
+}
+#btn:hover{
+  background-color:yellow;
+  color:black;
+  opacity:0.7;
+  transition: opacity 0.15s;
+}
+#text{
+  top:1rem;
+  font-size: 2rem;
+  color:saddlebrown;
+}

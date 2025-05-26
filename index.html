@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div class="pipe">
+            <div class="top_pipe"></div>
+            <div id="hole"></div>
+            <div class="bottom_pipe"></div>
+        </div>
+        <div id="bird"><img src="bird1.png" alt="Bird"></div>
+    </div>
+    <div id="result">
+        <h1>Game Over</h1>
+        <p id="text"></p>
+        <button id="btn" onclick="location.reload()">Restart</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
